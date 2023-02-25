@@ -36,10 +36,9 @@ class _HomeState extends State<Home> {
       height: double.maxFinite,
       width: double.maxFinite,
       decoration: BoxDecoration(
-        gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [Colors.black, Colors.blueGrey]),
+        image: DecorationImage(
+            image: AssetImage('images/weather.jpg'),fit: BoxFit.cover
+        ),
       ),
       child: Scaffold(
         backgroundColor: Colors.transparent,
